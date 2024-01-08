@@ -1,0 +1,361 @@
+:root {
+    --maroon: #8a0806;
+    --gray: #adb2b8d5;
+    --box-shadow: 2px 0 4px 1px rgba(0, 0, 0, 15%);
+    --background-gradient: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+        url(images/brand/Slider-1-1024x500.jpg) no-repeat;
+
+    --background-gradient-form: linear-gradient(to top, rgba(146, 18, 18, 1.5), rgba(92, 7, 7, 0.7), rgba(0, 0, 0, 0.5)),
+        url(images/brand/Slider-1-1024x500.jpg) no-repeat;
+}
+body {
+    /** fonts **/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    /** fonts **/
+}
+
+/**=================== LANDING PAGE DESIGN =========================**/
+
+.header-site {
+    background: var(--background-gradient);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-site h1 {
+    color: white;
+    padding: 7px 0;
+    font-size: 1.9rem;
+}
+.header-site h1 span {
+    color: rgb(172, 45, 45);
+    font-size: 2.2rem;
+}
+.header-site p {
+    color: white;
+}
+.header-site .early-alert-intro {
+    margin-top: 40px;
+}
+#about {
+    padding-top: 89px;
+}
+#about h2 {
+    padding-bottom: 17px;
+}
+#about .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about .trace-ea-logo {
+    display: flex;
+    justify-content: center;
+}
+#about .trace-ea-logo .img-fluid {
+    width: 236px;
+}
+#about p {
+    transition:
+        padding 0.3s ease-in-out,
+        border-left 0.2s ease-in-out;
+}
+#about p:hover {
+    border-left: 3px solid var(--maroon);
+    padding-left: 10px;
+    box-shadow: 2px 0 4px 1px rgba(0, 0, 0, 6%);
+    border-radius: 4px;
+    padding: 15px;
+}
+#mv {
+    padding: 120px 0;
+}
+#mv h5 {
+    background-color: var(--maroon);
+    border-radius: 6px;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 1rem;
+    text-align: center;
+}
+#mv p {
+    padding: 9px 0;
+}
+#mv .mv-content {
+    padding: 26px;
+    margin-bottom: 32px;
+}
+#contact {
+    width: 100%;
+    background-color: var(--maroon);
+    height: 75vh;
+}
+.header-site p,
+#about p,
+#mv p {
+    font-size: 0.9rem;
+}
+footer {
+    box-shadow: var(--box-shadow);
+}
+
+.footer p {
+    font-size: 0.6rem;
+    margin: 0;
+    padding: 7px;
+    text-align: center;
+}
+
+/** LANDING PAGE RESPONSIVE **/
+@media screen and (max-width: 576px) {
+    .header-site {
+        background: rgb(117, 19, 17);
+    }
+    .header-site h1 span {
+        font-size: 1.7rem;
+        color: #d1b203;
+    }
+    .header-site h1 {
+        font-size: 1.2rem;
+    }
+    #about h2 {
+        font-size: 1.4rem;
+    }
+    .header-site p,
+    #about p {
+        font-size: 0.7rem;
+        padding-bottom: 20px;
+    }
+    #mv h5 {
+        margin: 0 20px;
+        font-size: 0.8rem;
+        padding: 6px 0;
+    }
+    #mv .mv-content p,
+    .footer p {
+        font-size: 0.6rem;
+    }
+}
+
+/**==================== NAVBAR DESIGN =====================**/
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+.navbar-brand .trace-ea-logo {
+    width: 35px;
+}
+.navbar-brand span {
+    font-size: 1rem;
+}
+.navbar .auth-btn {
+    display: flex;
+}
+.navbar .auth-btn .btn-sm {
+    font-size: 0.8rem;
+}
+.navbar .nav-link {
+    font-size: 0.9rem;
+}
+.nav-link,
+.dropdown-item {
+    font-size: 0.8rem;
+}
+.nav-link,
+.dropdown-item {
+    border-radius: 0.375rem;
+    transition: padding-left 0.2s ease;
+    cursor: pointer;
+}
+.nav-link:hover {
+    color: #fff;
+    background-color: var(--gray);
+    padding-left: 25px;
+}
+.dropdown-item:hover {
+    background-color: var(--gray);
+}
+@media screen and (max-width: 576px) {
+    .hidden-on-small-screens {
+        display: none;
+    }
+    .navbar .trace-ea-logo {
+        width: 30px;
+    }
+    .nav-link,
+    .dropdown-item {
+        font-size: 0.7rem;
+    }
+    .navbar .navbar-toggler {
+        display: flex;
+        justify-content: center;
+        width: 41px;
+        padding: 0 9px;
+    }
+    .navbar .auth-btn .btn,
+    .navbar .navbar .dropdown-item,
+    .navbar .nav-link {
+        font-size: 0.7rem;
+    }
+}
+
+/** ----- FORM CONTROL DESIGN ----- **/
+
+.form-section {
+    background: var(--background-gradient-form);
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+}
+.form-section .wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.form-section .container {
+    padding: 20px;
+    max-width: 380px;
+}
+.form-section h1 {
+    font-size: 1.4rem;
+}
+
+.form-section .form-control::placeholder,
+#form-section .col select,
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="password"] {
+    font-size: 0.9rem;
+}
+.form-section .form-group .btn,
+.form-section .forgot-password-btn {
+    font-size: 0.8rem;
+    margin: 0 22px;
+}
+.form-section .forgot-password-btn {
+    text-decoration: none;
+    color: rgb(40, 111, 204);
+}
+.form-section .forgot-password-btn:hover {
+    text-decoration: underline;
+}
+.form-section .alert {
+    padding: 10px;
+    font-size: 0.9rem;
+    position: relative;
+}
+.form-section .alert button {
+    padding: 8px;
+    position: absolute;
+    right: 7px;
+    top: 6px;
+}
+.form-section hr {
+    opacity: 8.9%;
+    margin: 10px 0;
+}
+.signup-form .col {
+    padding: 5px;
+}
+.signup-form {
+    padding: 49px 0;
+}
+.signup-form .container {
+    max-width: 497px;
+}
+.form-section .resent-otp {
+}
+@media screen and (max-width: 486px) {
+    #form-section {
+        background: var(--maroon);
+    }
+    #form-section .alert {
+        font-size: 0.6rem;
+        padding: 7px;
+    }
+    .form-section h1 {
+        font-size: 1.3rem;
+    }
+    .form-section .form-control::placeholder,
+    .form-section .form-group input,
+    .form-section .col select {
+        font-size: 0.7rem;
+    }
+    .form-section .form-group .btn,
+    .form-section .forgot-password-btn {
+        font-size: 0.7rem;
+        margin: 0;
+    }
+    .signup-form .col {
+        padding: 1.8px;
+    }
+    #mv .mv-content {
+        padding: 10px;
+    }
+}
+
+/** ..... LOGIN FORM & SIGNUP FORM ..... **/
+
+/** 404 page **/
+.pnf-section {
+    display: flex;
+    justify-content: center;
+}
+.pnf-section h1 {
+    font-size: 3rem;
+}
+.pnf-section .wrapper {
+    display: flex;
+    padding-top: 120px;
+    justify-content: center;
+}
+.pnf-section img {
+    padding-left: 50px;
+    max-width: 500px;
+}
+.pnf-section .container {
+    text-align: center;
+}
+
+/**=========404 RESPONSIVE DESIGN==========**/
+@media screen and (max-width: 486px) {
+    .pnf-section h1 {
+        font-size: 2.85rem;
+    }
+    .pnf-section h5 {
+        font-size: 0.9rem;
+    }
+    .pnf-section .btn {
+        font-size: 0.6rem;
+    }
+}
+
+/**TEAM PAGE DESIGN**/
+
+.team-section {
+    width: 100%;
+    min-height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-section .wrapper {
+    display: flex;
+    justify-content: center;
+}
+.team-section .container {
+    padding: 50px;
+}
